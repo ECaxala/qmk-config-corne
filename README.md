@@ -6,6 +6,6 @@ My config for the corne keyboard.
 
 ```shell
 cd ~/qmk_firmware/keyboards/crkbd/keymaps
-git@github.com:ECaxala/qmk-config-corne.git
+git clone git@github.com:ECaxala/qmk-config-corne.git
 qmk compile -kb crkbd/rev1 -km tobias
 ```
