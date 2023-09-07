@@ -38,13 +38,13 @@ void set_board_colors(uint8_t hue, uint8_t hue_backglow) {
 bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     switch(get_highest_layer(layer_state|default_layer_state)) {
         case _LOWER:
-            set_board_colors(70, 180);
+            set_board_colors(255, 0);
             break;
         case _BASE:
             set_board_colors(100, 6);
             break;
         case _RAISE:
-            set_board_colors(150, 50);
+            set_board_colors(6, 100);
             break;
         case _META:
             rgb_matrix_sethsv(0, 0, 10);
