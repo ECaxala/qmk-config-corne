@@ -16,7 +16,7 @@ void set_board_colors_side(uint8_t offset, uint8_t hue, uint8_t hue_backglow) {
   for(int i = 0; i < 24; i++) {
     uint8_t led = i + offset + 6;
     if (led > 0) {
-      uint8_t x = i / 4 * 7;
+      uint8_t x = i / 4 * 5;
       rgb_matrix_sethsv_at(led, hue + x, saturation, brightness);
     }
   }
@@ -41,10 +41,10 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
             set_board_colors(255, 0);
             break;
         case _BASE:
-            set_board_colors(100, 6);
+            set_board_colors(6, 105);
             break;
         case _RAISE:
-            set_board_colors(6, 100);
+            set_board_colors(110, 6);
             break;
         case _META:
             rgb_matrix_sethsv(0, 0, 10);
