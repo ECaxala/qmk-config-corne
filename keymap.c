@@ -60,7 +60,7 @@ enum custom_keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT_split_3x6_3(
-       XXXXXXX,    KC_Q,    KC_W,    KC_E,    AL_R,   AL_T,                        AL_Y,    AL_U,    KC_I,    KC_O,   KC_P,   XXXXXXX,
+       KC_BRID,    KC_Q,    KC_W,    KC_E,    AL_R,   AL_T,                        AL_Y,    AL_U,    KC_I,    KC_O,   KC_P,   KC_BRIU,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
        KC_HYPR,    AL_A,    AL_S,    AL_D,    AL_F,   AL_G,                        AL_H,    AL_J,    AL_K,    AL_L,   AL_QT,  KC_HYPR,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
